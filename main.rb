@@ -1,3 +1,8 @@
+require './game'
+require './player'
+require './questions'
+
 class Main
-  x
+  newGame = Game.new
+  newGame.new_question
 end
