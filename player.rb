@@ -10,12 +10,17 @@ class Player
 
   def life_drop
     @life -= 1
-    puts "Seriously?! No!"
+    puts "#{name}: Seriously?! No!"
+    is_dead
+  end
 
+  def is_dead
     if self.life == 0
       puts "#{name} is now dead"
+      puts "----- GAME OVER -----"
+      exit(true)
     else
-      puts "Your new life is #{life}/3"
+      puts "#{name}'s new life is #{life}/3"
     end
 
   end
