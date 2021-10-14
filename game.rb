@@ -1,6 +1,3 @@
-require './player'
-require './questions'
-
 class Game
 
   attr_reader :current_player
